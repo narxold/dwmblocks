@@ -10,7 +10,7 @@ static const Block blocks[] = {
 
 	{"/: ", "bash ~/.config/dwmblocks/scripts/sb-disk", 60, 0},
 
-	{"Cpu: ", "sensors | awk '/Core 0/ {print '' $3'", 5, 0},
+	{"Cpu: ", "bash ~/.config/dwmblocks/scripts/sb-cpu", 5, 0},
 
 	{"Mem: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5,		0},
 
